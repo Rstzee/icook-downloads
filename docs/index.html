@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FFF8EE">
+  <meta name="description" content="Meet iCook, your everyday kitchen companion. Download the iCook Android app and get cooking.">
+  <title>iCook — Your everyday kitchen companion</title>
+  <link rel="icon" href="assets/icook-logo.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="./" aria-label="iCook home">
+      <img src="assets/icook-logo.png" width="48" height="48" alt="">
+      <span><span class="brand-i">i</span>Cook</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <button type="button" id="how-it-works" aria-haspopup="dialog" aria-controls="installation">How it works</button>
+      <span class="nav-divider" aria-hidden="true">|</span>
+      <a id="contact" href="https://github.com/Rstzee/icook-downloads/issues/new">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">YOUR EVERYDAY KITCHEN COMPANION</p>
+        <h1 id="hero-title">Your next great meal <span>starts here.</span></h1>
+        <p class="description">A little inspiration for your kitchen.<br class="desktop-break"> Meet iCook and get cooking.</p>
+        <a class="download" href="https://github.com/Rstzee/icook-downloads/releases/latest/download/icook.apk">
+          <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4"/></svg>
+          Download APK
+        </a>
+        <p class="download-note">For Android <span aria-hidden="true">·</span> Free download</p>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orange-shape"></div>
+        <div class="mint-shape"></div>
+        <img class="mascot" src="assets/icook-logo.png" width="1024" height="1024" alt="" fetchpriority="high">
+        <span class="art-caption">A little help. A lot of possibilities.</span>
+      </div>
+    </section>
+    <noscript>
+      <div class="no-script"><strong>How to get started:</strong> Download the APK, open the file on your Android device, follow the installation prompts, and open iCook.</div>
+    </noscript>
+  </main>
+
+  <dialog id="installation" aria-labelledby="installation-title">
+    <div class="dialog-heading">
+      <h2 id="installation-title">Let's get cooking.</h2>
+      <form method="dialog"><button class="close" aria-label="Close installation instructions" autofocus>×</button></form>
+    </div>
+    <p class="dialog-intro">Three small steps to get iCook on your Android.</p>
+    <ol class="steps">
+      <li><strong>Download the app</strong><span>Tap Download APK and save the file on your Android device.</span></li>
+      <li><strong>Install iCook</strong><span>Open the downloaded file and follow Android's prompts. If asked, allow installation from the browser or file manager you used.</span></li>
+      <li><strong>Get cooking</strong><span>Open iCook and get started.</span></li>
+    </ol>
+  </dialog>
+</body>
+</html>
