@@ -24,6 +24,20 @@ h1 span{display:block;color:#b95000}
 .download:hover{background:#f58927;transform:translateY(-2px)}
 .download-note{font-size:13px;color:var(--muted);margin:17px 0 0;padding-left:8px}
 .download-note span{margin:0 7px}
+.demo-link{display:inline-block;margin-top:24px;font-size:15px;font-weight:700;text-decoration:underline;text-underline-offset:5px}
+.demo-link span{margin-left:6px}
+.demo{width:min(1120px,calc(100% - 112px));margin:0 auto;padding:32px 0 80px;scroll-margin-top:24px}
+.demo-heading{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:24px}
+.demo .eyebrow{margin-bottom:12px;color:#a54800}
+.demo h2{font-size:clamp(26px,3vw,40px);line-height:1.2;max-width:720px}
+.demo-description{font-size:16px;line-height:1.7;color:var(--muted);margin:16px 0 0;max-width:650px}
+.demo-duration{flex-shrink:0;padding:10px 16px;background:var(--mint);border-radius:999px;font-size:14px;font-weight:700}
+.demo-video{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;border:1px solid #e7e1d7;border-radius:20px;background:var(--cream);box-shadow:0 16px 40px #0823330d}
+.demo-note{font-size:13px;line-height:1.7;color:var(--muted);margin:16px 0 0}
+.demo-note a{text-decoration:underline;text-underline-offset:4px;margin-left:8px}
+@media(max-width:900px){.demo{width:calc(100% - 64px)}}
+@media(max-width:650px){.demo{width:calc(100% - 48px);padding:32px 0 48px}.demo-heading{align-items:flex-start;gap:12px}.demo-description{font-size:15px}.demo-duration{padding:8px 12px}.demo-video{border-radius:12px}}
+@media(max-width:350px){.demo{width:calc(100% - 36px)}.demo-heading{flex-direction:column}}
 .hero-art{position:relative;isolation:isolate;display:flex;align-items:center;justify-content:center;aspect-ratio:1/1.12}
 .orange-shape{position:absolute;z-index:-1;width:92%;height:89%;background:#ffe4c2;border-radius:48% 52% 40% 60% / 56% 41% 59% 44%;transform:rotate(-12deg)}
 .mint-shape{position:absolute;top:10%;right:1%;width:20%;aspect-ratio:1;background:var(--mint);border-radius:50%;z-index:-1}
